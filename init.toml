@@ -24,6 +24,9 @@
     windows_index_type = 3
     enable_tabline_filetype_icon = true
     enable_statusline_mode = true
+    enable_statusline_bfpath = true
+    relativenumber = false
+    sidebar_width = 50
     statusline_unicode_symbols = true
     bootstrap_before = "myspacevim#before"
 
