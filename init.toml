@@ -30,6 +30,7 @@
     statusline_unicode_symbols = true
     bootstrap_before = "myspacevim#before"
     autocomplete_method = "coc"
+    disabled_plugins = ['vim-startify']
 
 # Enable autocomplete layer
 [[layers]]
@@ -65,6 +66,9 @@ name = "lang#latex"
 
 [[layers]]
 name = "lang#markdown"
+
+[[layers]]
+name = "lang#latex"
 
 [[layers]]
 name = "format"
