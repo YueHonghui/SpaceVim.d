@@ -29,6 +29,7 @@
     sidebar_width = 50
     statusline_unicode_symbols = true
     bootstrap_before = "myspacevim#before"
+    disabled_plugins = ['vim-startify']
 
 # Enable autocomplete layer
 [[layers]]
@@ -58,6 +59,18 @@ name = "lang#c"
 
 [[layers]]
 name = "lang#markdown"
+
+[[layers]]
+name = "lsp"
+filetypes = [
+  "c",
+  "cpp"
+]
+[layers.override_cmd]
+  c = ["clangd"]
+
+[[layers]]
+name = "lang#latex"
 
 [[layers]]
 name = "format"
