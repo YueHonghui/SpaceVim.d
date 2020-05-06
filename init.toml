@@ -69,3 +69,18 @@ name = "lang#markdown"
 
 [[layers]]
 name = "format"
+
+[[layers]]
+name = "lang#vim"
+
+[[layers]] 
+  name = 'lsp'
+  filetypes = [
+    'c',
+    'cpp',
+    'go'
+  ]
+  [layers.override_cmd]
+    c = ['ccls', '--log-file=/tmp/ccls.log']
+    cpp = ['ccls', '--log-file=/tmp/ccls.log']
+    go = ['gopls', '-remote=127.0.0.1:19191']

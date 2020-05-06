@@ -1,0 +1,24 @@
+{
+  "languageserver": {
+    "golang": {
+      "command": "gopls",
+      "args": ["-remote=127.0.0.1:19191"],
+      "rootPatterns": ["go.mod", ".vim/", ".git/", ".hg/"],
+      "filetypes": ["go"]
+    },
+    "ccls": {
+      "command": "ccls",
+      "filetypes": ["c", "cpp"],
+      "rootPatterns": ["compile_commands.json", ".svn/", ".git/"],
+      "index": {
+        "threads": 8
+      },
+      "initializationOptions": {
+        "cache": {
+          "directory": ".ccls-cache"
+        },
+        "highlight": { "lsRanges" : true }
+      }
+    }
+  }
+}
