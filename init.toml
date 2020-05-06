@@ -68,7 +68,4 @@ name = "lang#latex"
 name = "lang#markdown"
 
 [[layers]]
-name = "lang#latex"
-
-[[layers]]
 name = "format"
