@@ -56,9 +56,6 @@ name = "lang#python"
 name = "lang#javascript"
 
 [[layers]]
-name = "lang#rust"
-
-[[layers]]
 name = "lang#c"
 
 [[layers]]
