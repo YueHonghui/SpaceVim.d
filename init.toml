@@ -30,7 +30,11 @@
     statusline_unicode_symbols = true
     bootstrap_before = "myspacevim#before"
     autocomplete_method = "coc"
-    disabled_plugins = ['vim-startify']
+    disabled_plugins = ['vim-startify','markdown-preview.nvim']
+
+[[custom_plugins]]
+repo = "YueHonghui/markdown-preview.nvim"
+merged = false
 
 # Enable autocomplete layer
 [[layers]]
@@ -56,9 +60,6 @@ name = "lang#python"
 name = "lang#javascript"
 
 [[layers]]
-name = "lang#rust"
-
-[[layers]]
 name = "lang#c"
 
 [[layers]]
@@ -78,9 +79,11 @@ name = "lang#vim"
   filetypes = [
     'c',
     'cpp',
-    'go'
+    'go',
+    'plzconfig'
   ]
   [layers.override_cmd]
     c = ['ccls', '--log-file=/tmp/ccls.log']
     cpp = ['ccls', '--log-file=/tmp/ccls.log']
     go = ['gopls', '-remote=127.0.0.1:19191']
+    plzconfig = ['plz', 'tool', 'lsp']
