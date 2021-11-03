@@ -11,6 +11,7 @@
     # set spacevim theme. by default colorscheme layer is not loaded,
     # if you want to use more colorscheme, please load the colorscheme
     # layer
+    filemanager = "vimfiler"
     colorscheme = "gruvbox"
     colorscheme_bg = "dark"
     # Disable guicolors in basic mode, many terminal do not support 24bit
@@ -30,7 +31,7 @@
     statusline_unicode_symbols = true
     bootstrap_before = "myspacevim#before"
     autocomplete_method = "coc"
-    disabled_plugins = ['vim-startify','markdown-preview.nvim']
+    disabled_plugins = ['vim-startify', 'markdown-preview.nvim']
 
 [[custom_plugins]]
 repo = "YueHonghui/markdown-preview.nvim"
@@ -46,6 +47,10 @@ auto_completion_complete_with_key_sequence = "nil"
 auto_completion_complete_with_key_sequence_delay = 0.1
 
 [[layers]]
+name = 'core'
+enable_smooth_scrolling = false
+
+[[layers]]
 name = 'shell'
 default_position = 'top'
 default_height = 30
@@ -55,6 +60,9 @@ name = "lang#go"
 
 [[layers]]
 name = "lang#python"
+
+[[layers]]
+name = "lang#rust"
 
 [[layers]]
 name = "lang#javascript"
