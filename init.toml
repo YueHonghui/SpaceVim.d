@@ -37,12 +37,16 @@
 repo = "YueHonghui/markdown-preview.nvim"
 merged = false
 
+[[custom_plugins]]
+repo = "vigoux/LanguageTool.nvim"
+
 # Enable autocomplete layer
 [[layers]]
 name = 'autocomplete'
 auto-completion-return-key-behavior = "complete"
 auto-completion-tab-key-behavior = "cycle"
 auto_completion_delay = 200
+auto_completion_enable_snippets_in_popup = false
 auto_completion_complete_with_key_sequence = "nil"
 auto_completion_complete_with_key_sequence_delay = 0.1
 
@@ -63,6 +67,9 @@ name = "lang#python"
 
 [[layers]]
 name = "lang#rust"
+
+[[layers]]
+name = "lang#java"
 
 [[layers]]
 name = "lang#javascript"
@@ -87,11 +94,11 @@ name = "lang#vim"
   filetypes = [
     'c',
     'cpp',
-    'go',
     'plzconfig'
   ]
+  enabled_clients = ['ccls']
   [layers.override_cmd]
     c = ['ccls', '--log-file=/tmp/ccls.log']
     cpp = ['ccls', '--log-file=/tmp/ccls.log']
-    go = ['gopls', '-remote=127.0.0.1:19191']
+#    go = ['gopls', '-remote=127.0.0.1:19191']
     plzconfig = ['plz', 'tool', 'lsp']
