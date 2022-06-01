@@ -30,6 +30,7 @@
     sidebar_width = 50
     statusline_unicode_symbols = true
     bootstrap_before = "myspacevim#before"
+    bootstrap_after = 'myspacevim#after'
     autocomplete_method = "coc"
     disabled_plugins = ['vim-startify', 'markdown-preview.nvim']
 
@@ -37,8 +38,11 @@
 repo = "YueHonghui/markdown-preview.nvim"
 merged = false
 
+#[[custom_plugins]]
+#repo = "vigoux/LanguageTool.nvim"
+
 [[custom_plugins]]
-repo = "vigoux/LanguageTool.nvim"
+repo = "rhysd/vim-grammarous"
 
 # Enable autocomplete layer
 [[layers]]
@@ -61,6 +65,7 @@ default_height = 30
 
 [[layers]]
 name = "lang#go"
+go_file_head = []
 
 [[layers]]
 name = "lang#python"
