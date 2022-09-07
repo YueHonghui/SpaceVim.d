@@ -32,14 +32,7 @@
     bootstrap_before = "myspacevim#before"
     bootstrap_after = 'myspacevim#after'
     autocomplete_method = "coc"
-    disabled_plugins = ['vim-startify', 'markdown-preview.nvim']
-
-[[custom_plugins]]
-repo = "YueHonghui/markdown-preview.nvim"
-merged = false
-
-#[[custom_plugins]]
-#repo = "vigoux/LanguageTool.nvim"
+    disabled_plugins = ['vim-startify']
 
 [[custom_plugins]]
 repo = "rhysd/vim-grammarous"
