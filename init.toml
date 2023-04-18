@@ -87,6 +87,10 @@ name = "format"
 [[layers]]
 name = "lang#vim"
 
+[[layers]]
+name = "git"
+git_plugin = 'fugitive'
+
 [[layers]] 
   name = 'lsp'
   filetypes = [
