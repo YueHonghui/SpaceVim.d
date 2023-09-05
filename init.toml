@@ -35,8 +35,10 @@
     disabled_plugins = ['vim-startify']
 
 [[custom_plugins]]
-repo = "rhysd/vim-grammarous"
-
+#repo = "rhysd/vim-grammarous"
+repo = "nvim-tree/nvim-web-devicons"
+[[custom_plugins]]
+repo = "sindrets/diffview.nvim"
 # Enable autocomplete layer
 [[layers]]
 name = 'autocomplete'
